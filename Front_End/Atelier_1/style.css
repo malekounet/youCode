@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
 
-body{
+*{
     margin: 0%;
     padding: 0%;
+}
+
+body{
+    
     font-family: 'Spartan', sans-serif;
     font-size: 15px;
     background: url(img/bg-pattern-top-desktop.svg) fixed no-repeat top left;
@@ -14,9 +18,9 @@ body{
 .rating_flex{
     display: flex;
     background-color:hsl(300, 24%, 96%) ;
-    border-radius: 4%;
-    width: 390px;
-    height: 50px;
+    border-radius: 6px;
+    width: 370px;
+    height: 52px;
     justify-content: space-around;
     align-items: center;
     margin-bottom: 14px;
@@ -26,6 +30,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items:center;
+    
 }
 
 .rating_flex:nth-child(2){
@@ -37,14 +42,16 @@ body{
 
 .card_flex{
     display: flex;
-    justify-content: space-between;
-    height: 140px;
+    justify-content: space-around;
+    
+    
     
 }
 .card_top_flex{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 13px;
 }
 .card img{
     border-radius: 50%;
@@ -53,31 +60,64 @@ body{
 }
 
 .card{
-    height: 100%;
+  
     background-color: hsl(300, 43%, 22%);
     color: hsl(0, 0%, 100%);
     margin-right:20px;
     border-radius: 6px;
     font-size: 13px;
-    padding: 19px;
-    width: 33%;
+    padding: 3%;
+    width: 30%;
 }
-
-.bottom_container{
-    height: 50%;
-    margin-top: 108px;
+.bottom{
+    margin-top: 7%;
 }
 
 .card:nth-child(2){
-    align-self: center;
+    margin-top: 22px;
+    margin-bottom: -22px;
 }
 .card:nth-child(3){
-    align-self: flex-start;
+    margin-top: 44px;
+    margin-bottom:-44px ;
 }
-.card:nth-child(1){
-    align-self: flex-end;
-}
-.card p{
-    font-size: 10px;
+
+
+
+@media screen and (max-width: 760px){
+    body{
+        background-image: url('img/bg-pattern-top-mobile.svg');
+    }
+    .txt_rating_flex{
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .rating_flex:nth-child(2){
+        margin-left: 0px;
+    }
+    .rating_flex:nth-child(3){
+        margin-left: 0px;
+    }
+    .page{
+        margin: 60px 50px;
+    }
+    .txt h1,p{
+        margin-bottom: 32px;
+    }
+    .card_flex{
+        flex-direction: column;
+        align-items: center;
+    }
+    .card{
+        width: 100%;
+        margin-right: 0%;
+    }
+    .card_top_flex{
+        padding: 5% 19%;
+    }
+    .name_job{
+        margin-top: 10%;
+    }
 }
 
