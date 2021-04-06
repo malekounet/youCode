@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: #991111;
+    // background-image: url(./images/!@2x.png);
+  
+    
+}
+
+#form {
+    display: flex;
+}
+
+
+.menu div{
+    
+
+    margin:3% 4%;
+    
+    & a{
+        text-decoration: none;
+        color: white;
+        font-size: 1.7rem;
+        font-family: 'Parisienne';
+    }
+    
+
+
+}
+.menu{
+    display:flex;
+    align-content: space-around;
+}
+#acheter{
+    display: flex;
+    align-content: space-around;
+    align-items: center;
+    margin:3% 4%;
+    & img{
+        width:75%;
+    }
+    & .text{
+        width: 60%;
+        margin-right: 6%;
+    }
+}
+
+.cartes{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 66px;
+   
+ 
+  
+    & .carte{
+        
+        margin: 0 7px 0 3px;
+        width: 30%;
+        overflow: hidden;
+        text-align: center;
+        border-radius: 15% 15% 0 0;
+        margin-bottom: 66px;
+        
+        & .img {
+            height: 218px;
+            
+          
+            overflow: hidden;
+            
+            & img{
+              width: 400px;
+            }
+        }
+        & p{
+            margin: 2px;
+            color: white;
+        }
+        
+    }
+
+    
+}
+.contact form {
+    
+    text-align: center;
+    & input, & textarea{
+        
+        margin-bottom: 17px;
+        width: 47%;
+        height: 27px;
+        border-radius: 5px;
+    }
+    
+}

@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Parisienne&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #991111;
+}
+
+#form {
+  display: flex;
+}
+
+.menu div {
+  margin: 3% 4%;
+}
+.menu div a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.7rem;
+  font-family: "Parisienne";
+}
+
+.menu {
+  display: flex;
+  align-content: space-around;
+}
+
+#acheter {
+  display: flex;
+  align-content: space-around;
+  align-items: center;
+  margin: 3% 4%;
+}
+#acheter img {
+  width: 75%;
+}
+#acheter .text {
+  width: 60%;
+  margin-right: 6%;
+}
+
+.cartes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 66px;
+}
+.cartes .carte {
+  margin: 0 7px 0 3px;
+  width: 30%;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 15% 15% 0 0;
+  margin-bottom: 66px;
+}
+.cartes .carte .img {
+  height: 218px;
+  overflow: hidden;
+}
+.cartes .carte .img img {
+  width: 400px;
+}
+.cartes .carte p {
+  margin: 2px;
+  color: white;
+}
+
+.contact form {
+  text-align: center;
+}
+.contact form input, .contact form textarea {
+  margin-bottom: 17px;
+  width: 47%;
+  height: 27px;
+  border-radius: 5px;
+}
+
+/*# sourceMappingURL=style.css.map */
